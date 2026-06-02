@@ -1,0 +1,7 @@
+.DS_Store
+*.zip
+.claude/
+task_*.md
+
+# Local Netlify folder
+.netlify

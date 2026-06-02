@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>KPIH · Investor Tour · לירן מילר</title>
+<meta name="description" content="חמש הזדמנויות נדל״ן נבחרות בקוֹה פאנגן — מבט אישי של לירן מילר.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#0A3F3A">
+<!-- Open Graph / Twitter (WhatsApp link preview) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Koh Phangan Investment Hub">
+<meta property="og:title" content="KPIH · Investor Tour">
+<meta property="og:description" content="חמש הזדמנויות נדל״ן נבחרות בקוֹה פאנגן — מבט אישי של לירן מילר.">
+<meta property="og:image" content="https://liam-kp.github.io/kpih-investor-tour/images/hero/hero.jpg">
+<meta property="og:url" content="https://liam-kp.github.io/kpih-investor-tour/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KPIH · Investor Tour">
+<meta name="twitter:description" content="חמש הזדמנויות נדל״ן נבחרות בקוֹה פאנגן — מבט אישי של לירן מילר.">
+<meta name="twitter:image" content="https://liam-kp.github.io/kpih-investor-tour/images/hero/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;800;900&family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#F4EEE3; --paper:#FCFAF5; --ink:#171511; --muted:#7A7263;
+  --teal:#0E6B63; --teal-d:#0A3F3A; --sun:#BC5E33; --gold:#C9A24B;
+  --line:#E6DDCD; --dark:#101A18;
+  --serif:'Frank Ruhl Libre',serif; --sans:'Assistant',sans-serif;
+  --maxw:620px; --ease:cubic-bezier(.16,.84,.34,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--dark);color:var(--ink);font-family:var(--sans);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.en{font-family:var(--serif)}
+img{display:block;width:100%;height:100%;object-fit:cover}
+/* shared eyebrow */
+.eyebrow{font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.18em}
+
+/* progress + nav */
+.bar{position:fixed;top:0;inset-inline:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold));width:0;z-index:100;transition:width .12s linear}
+.nav-scrim{position:fixed;top:0;inset-inline:0;height:120px;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.12) 55%,transparent);z-index:88;pointer-events:none;transition:opacity .45s var(--ease)}
+.nav-scrim.hide{opacity:0}
+nav{position:fixed;top:0;inset-inline:0;z-index:90;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;transition:.45s var(--ease)}
+nav.solid{background:rgba(244,238,227,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:11px 20px}
+nav .brand{font-family:var(--serif);font-weight:700;font-size:21px;color:#fff;letter-spacing:.02em}
+nav.solid .brand{color:var(--ink)}
+nav .brand b{color:var(--gold);font-weight:700}
+nav .menu{display:flex;gap:3px}
+nav .menu a{font-family:var(--sans);font-size:13.5px;font-weight:600;color:rgba(255,255,255,.9);text-decoration:none;padding:6px 8px;border-radius:99px;transition:.25s;white-space:nowrap}
+nav.solid .menu a{color:var(--muted)}
+nav .menu a.active,nav .menu a:hover{color:var(--gold)}
+nav.solid .menu a.active{color:var(--teal)}
+
+/* ===== HERO ===== */
+.hero{position:relative;height:100svh;min-height:600px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background:var(--teal-d);overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;will-change:transform;animation:kb 24s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.06)}to{transform:scale(1.16)}}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,26,24,.34) 0%,transparent 30%,rgba(10,28,26,.55) 62%,rgba(10,28,26,.92) 100%);z-index:2}
+.hero .inner{position:relative;z-index:4;padding:0 26px calc(54px + env(safe-area-inset-bottom));max-width:var(--maxw);margin:0 auto;width:100%}
+.hero .eye{font-family:var(--sans);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:700;opacity:0;animation:up .9s var(--ease) .2s forwards}
+.hero h1{margin:14px 0 16px;opacity:0;animation:up 1s var(--ease) .35s forwards}
+.hero h1 .nm-en{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(40px,12vw,62px);line-height:1.02;letter-spacing:.01em}
+.hero h1 .hl-he{display:block;font-family:var(--serif);font-weight:700;font-size:clamp(26px,7.5vw,40px);line-height:1.15;color:rgba(255,255,255,.96);margin-top:6px}
+.hero p{font-size:17px;line-height:1.55;max-width:42ch;color:rgba(255,255,255,.9);opacity:0;animation:up 1s var(--ease) .55s forwards}
+.hero .cue{margin-top:28px;font-size:13px;letter-spacing:.14em;color:rgba(255,255,255,.75);opacity:0;animation:up 1s var(--ease) .8s forwards}
+.hero .cue span{display:inline-block;animation:bob 1.9s ease-in-out infinite;margin-inline-end:8px}
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+
+/* intro */
+.intro{background:var(--sand);padding:60px 26px 40px}
+.intro .in{max-width:var(--maxw);margin:0 auto}
+.intro .eye-intro{font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sun);margin-bottom:16px}
+.intro p{font-family:var(--serif);font-size:22px;line-height:1.5;font-weight:500;color:#3f3a2d}
+.intro .sig{margin-top:18px;font-family:var(--serif);font-size:18px;font-weight:700;color:var(--teal-d)}
+
+/* ===== CHAPTER ===== */
+.chapter{position:relative;background:var(--paper)}
+.cover{position:relative;height:86svh;min-height:540px;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--teal-d)}
+.cover-bg{position:absolute;inset:-16% 0;background-size:cover;background-position:center;will-change:transform}
+.cover::after{content:'';position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,rgba(0,0,0,.2),transparent 32%,rgba(0,0,0,.42) 66%,rgba(0,0,0,.84))}
+.cover .c{position:relative;z-index:4;padding:0 26px 40px;max-width:var(--maxw);margin:0 auto;width:100%}
+.cover .num{font-family:var(--sans);font-size:12.5px;letter-spacing:.18em;color:var(--gold);font-weight:700;text-transform:uppercase}
+.cover .tags{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 12px}
+.tag{font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.25);letter-spacing:.01em}
+.presale-flag{position:absolute;z-index:5;top:max(72px,calc(env(safe-area-inset-top) + 64px));inset-inline-start:20px;display:inline-flex;align-items:center;gap:6px;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1a1206;background:var(--gold);padding:6px 13px;border-radius:99px;box-shadow:0 4px 14px rgba(0,0,0,.28)}
+.cover h2{font-family:var(--serif);font-size:clamp(44px,12vw,68px);font-weight:700;line-height:1;letter-spacing:.01em}
+.cover .sub{font-family:var(--serif);font-size:18px;font-weight:500;color:var(--gold);margin-top:2px}
+.cover .loc{font-size:14.5px;color:rgba(255,255,255,.9);font-weight:600;margin-top:10px}
+.cover .price-flag{display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;margin-top:18px;
+  background:linear-gradient(120deg,rgba(14,107,99,.94),rgba(10,63,58,.94));backdrop-filter:blur(8px);
+  border-inline-start:3px solid var(--gold);padding:12px 24px 12px 30px;
+  clip-path:polygon(16px 0,100% 0,100% 100%,16px 100%,0 50%);box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.price-flag .amt{font-family:var(--serif);font-size:27px;font-weight:800;color:#fff;line-height:1.05;direction:ltr}
+.price-flag .usd{font-size:13.5px;font-weight:600;color:var(--gold);direction:ltr;letter-spacing:.01em}
+.price-flag .note{font-size:11.5px;font-weight:600;color:rgba(255,255,255,.82);margin-top:2px}
+
+/* body */
+.body{background:var(--paper);position:relative;z-index:5;border-radius:28px 28px 0 0;margin-top:-30px;padding:36px 26px 16px;max-width:var(--maxw);margin-inline:auto}
+.reveal{opacity:0;transform:translateY(24px);transition:.85s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.lead{font-family:var(--serif);font-size:22px;line-height:1.42;font-weight:500;margin-bottom:24px}
+.stats{display:flex;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:24px}
+.stats div{flex:1;padding:16px 6px;text-align:center;border-inline-start:1px solid var(--line)}
+.stats div:first-child{border-inline-start:none}
+.stats .v{font-family:var(--serif);font-size:20px;font-weight:700;line-height:1.1}
+.stats .v span[dir=ltr]{unicode-bidi:isolate}
+.stats .k{font-size:11.5px;color:var(--muted);margin-top:5px;font-weight:600}
+.price-note{font-size:11.5px;color:rgba(255,255,255,.82);font-weight:600;margin-top:7px;max-width:34ch}
+.pnote{background:var(--sand);border-inline-start:3px solid var(--gold);border-radius:0 12px 12px 0;padding:13px 16px;font-size:13.5px;line-height:1.55;color:#55503f;margin-bottom:24px}
+.pnote b{font-weight:700;color:var(--ink)}
+.locnote{font-size:14px;line-height:1.6;color:#55503f;margin:14px 0 26px;background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.guarantee{margin-top:16px;display:grid;gap:10px}
+.gline{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--sand)}
+.gline.primary{background:linear-gradient(135deg,rgba(14,107,99,.10),rgba(201,162,75,.08));border-color:rgba(14,107,99,.25)}
+.gtag{display:inline-block;font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);background:rgba(14,107,99,.12);padding:3px 10px;border-radius:99px;margin-bottom:8px}
+.gline p{font-size:13.5px;line-height:1.6;color:#3f3a2d;margin:0}
+.gline .ltr{direction:ltr;unicode-bidi:isolate;font-weight:700;color:var(--teal-d)}
+.feat{margin-bottom:30px}
+.featgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;list-style:none}
+.featgrid li{font-size:14px;line-height:1.4;padding-inline-start:20px;position:relative}
+.featgrid li::before{content:'';position:absolute;inset-inline-start:0;top:6px;width:8px;height:8px;border-radius:2px;background:var(--teal);transform:rotate(45deg)}
+
+/* project marker band (scroll orientation) */
+.chapter-mark{background:var(--paper);text-align:center;padding:40px 26px 28px;border-top:1px solid var(--line)}
+.chapter-mark .pm-eye{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.chapter-mark .pm-name{font-family:var(--serif);font-size:clamp(26px,7vw,34px);font-weight:700;color:var(--ink);margin-top:9px;line-height:1.1}
+
+/* unified location banner */
+.locbanner{background:var(--sand);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:14px 0 28px}
+.locbanner .lb-eye{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sun)}
+.locbanner .lb-tt{font-family:var(--serif);font-size:19px;font-weight:700;margin:5px 0 13px}
+.locbanner ul{list-style:none;display:grid;gap:9px}
+.locbanner li{font-size:14px;line-height:1.45;color:#3f3a2d;padding-inline-start:26px;position:relative}
+.locbanner li::before{content:'📍';position:absolute;inset-inline-start:0;top:0;font-size:13px;filter:grayscale(.1)}
+.locbanner p{font-size:14px;line-height:1.65;color:#3f3a2d;margin-top:4px}
+.locbanner .lb-close{margin-top:13px;padding-top:13px;border-top:1px solid var(--line);color:var(--teal-d);font-weight:600}
+.locbanner .ltr{direction:ltr;unicode-bidi:isolate}
+.furnbanner{background:var(--sand);border:1px solid var(--line);border-inline-start:3px solid var(--gold);border-radius:0 14px 14px 0;padding:15px 18px;margin:0 0 28px}
+.furnbanner .fb-lead{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--ink);margin-bottom:5px}
+.furnbanner p{font-size:13.5px;line-height:1.55;color:#55503f;margin:0}
+.furnbanner .ltr{direction:ltr;unicode-bidi:isolate;font-weight:700}
+/* world price table */
+.gsub{font-size:14px;color:var(--muted);font-weight:600;margin:0 0 12px;text-align:center}
+.gtable{width:100%;border-collapse:collapse;font-size:15px}
+.gtable th{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:8px 12px;text-align:start;border-bottom:1px solid var(--line)}
+.gtable td{padding:13px 12px;border-bottom:1px solid var(--line)}
+.gtable td:first-child{font-family:var(--serif);font-weight:600}
+.gtable td:last-child{font-family:var(--serif);font-weight:800;color:var(--muted);text-align:start}
+.gtable td .ltr{direction:ltr;unicode-bidi:isolate}
+.gtable tbody tr:last-child td{border-bottom:none}
+.gtable tr.hi td{background:linear-gradient(120deg,rgba(14,107,99,.12),rgba(201,162,75,.10));color:var(--teal-d)}
+.gtable tr.hi td:last-child{color:var(--teal-d)}
+.gtable tr.hi td:first-child{border-radius:0 10px 10px 0}
+.gtable tr.hi td:last-child{border-radius:10px 0 0 10px}
+
+/* deal structure */
+.dealstruct{margin-bottom:30px}
+.ds-sub{font-family:var(--serif);font-size:16px;font-weight:600;color:var(--teal-d);margin-bottom:13px}
+.ds-grid{display:grid;gap:10px}
+.ds-card{background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.ds-card h6{font-family:var(--serif);font-size:15px;font-weight:700;color:var(--teal-d);margin-bottom:5px}
+.ds-card p{font-size:13.5px;line-height:1.5;color:#55503f}
+.ds-card .ltr{direction:ltr;unicode-bidi:isolate;font-weight:700}
+.ds-pay{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+.ds-pay span{flex:1;min-width:120px;background:rgba(14,107,99,.08);border:1px solid rgba(14,107,99,.18);border-radius:10px;padding:10px 12px;font-size:13px;font-weight:600;color:var(--teal-d);text-align:center}
+
+/* best for */
+.bestfor{background:linear-gradient(150deg,var(--teal),var(--teal-d));color:#fff;border-radius:16px;padding:20px 22px;margin-bottom:30px}
+.bestfor .bf-eye{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.bestfor ul{list-style:none;display:grid;gap:9px}
+.bestfor li{font-size:15px;font-weight:600;padding-inline-start:28px;position:relative}
+.bestfor li::before{content:'';position:absolute;inset-inline-start:0;top:5px;width:14px;height:8px;border-inline-start:2px solid var(--gold);border-bottom:2px solid var(--gold);transform:rotate(-45deg)}
+
+/* action buttons (location / brochure / reference) */
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.actbtn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:11px 18px;border-radius:12px;
+  font-family:var(--sans);font-weight:700;font-size:14px;text-decoration:none;cursor:pointer;
+  border:1.5px solid var(--gold);color:var(--teal-d);background:rgba(201,162,75,.10);transition:.22s var(--ease)}
+.actbtn:hover{background:var(--gold);color:#1a1206;transform:translateY(-2px)}
+.actbtn svg{width:18px;height:18px;flex:0 0 18px}
+
+/* media groups */
+.mgroup{margin-bottom:30px}
+.mhead{display:flex;align-items:baseline;gap:10px;margin-bottom:13px}
+.m-eye{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sun)}
+.m-tt{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--ink)}
+.mnote{font-size:12.5px;line-height:1.5;color:var(--muted);background:var(--sand);border-inline-start:3px solid var(--gold);border-radius:0 10px 10px 0;padding:9px 13px;margin:-4px 0 6px}
+.mnote-foot{font-size:11.5px;line-height:1.45;color:var(--muted);opacity:.85;margin:0 0 13px;padding-inline-start:3px}
+.feelarea{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:0 0 26px;padding:13px 16px;background:var(--sand);border:1px solid var(--line);border-radius:14px}
+.feelarea .fa-meta{display:flex;flex-direction:column;gap:2px;flex:1;min-width:130px}
+.feelarea .fa-eye{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sun)}
+.feelarea .fa-tt{font-family:var(--serif);font-size:16px;font-weight:700;color:var(--ink)}
+.act-ig{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:9px 15px;border-radius:99px;font-family:var(--sans);font-weight:700;font-size:13.5px;text-decoration:none;border:1px solid var(--gold);color:var(--teal-d);background:#fff;transition:.2s var(--ease);direction:ltr;margin-inline-start:auto}
+.act-ig:hover{background:var(--gold);color:#1a1206;transform:translateY(-2px)}
+.mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.mcell{position:relative;aspect-ratio:1;border-radius:11px;overflow:hidden;background:#dcd4c4;cursor:pointer}
+.mcell img{transition:.6s var(--ease)}
+.mcell:hover img{transform:scale(1.06)}
+.mcell.feature{grid-column:1/-1;aspect-ratio:16/9}
+.mgrid.plans{grid-template-columns:repeat(2,1fr);gap:10px}
+.mgrid.plans .mcell{aspect-ratio:3/4;background:var(--sand);border:1px solid var(--line)}
+.mgrid.plans .mcell img{object-fit:contain;padding:6px}
+.vbadge{position:absolute;inset:50% auto auto 50%;transform:translate(50%,-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.22);backdrop-filter:blur(6px);border:1.5px solid rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;z-index:2}
+.vbadge::after{content:'';border-inline-start:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-inline-start:3px}
+
+.fin{background:linear-gradient(155deg,var(--teal),var(--teal-d));color:#fff;border-radius:18px;padding:22px;margin-bottom:24px}
+.fin h4{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:12px}
+.fin .ln{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:15px}
+.fin .ln:last-of-type{border-bottom:none}
+.fin .ln b{font-weight:700;text-align:start}
+.fin .ln b .ltr{direction:ltr;unicode-bidi:isolate}
+.fin .ln a{color:var(--gold)}
+.fin .full{display:block;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14.5px;color:rgba(255,255,255,.92);font-weight:600}
+.fin .disc{font-size:11.5px;color:rgba(255,255,255,.7);margin-top:12px;line-height:1.5}
+
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.pc h5{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:9px}
+.pc .pro h5{color:var(--teal)} .pc .con h5{color:var(--sun)}
+.pc ul{list-style:none}
+.pc li{font-size:14px;line-height:1.45;padding:5px 0}
+.pc .pro li::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--teal);margin-inline-end:8px;vertical-align:middle}
+.pc .con li::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--sun);margin-inline-end:8px;vertical-align:middle}
+
+.bl{border-inline-start:3px solid var(--gold);padding-inline-start:18px;margin-bottom:30px}
+.bl .lbl{font-family:var(--sans);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);font-weight:700;margin-bottom:7px}
+.bl p{font-family:var(--serif);font-size:19px;line-height:1.5;font-weight:500}
+.bl p b{font-weight:800}
+
+/* red sunset — project facts strip */
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.facts span{flex:1 1 calc(50% - 4px);background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:11px 13px;display:flex;flex-direction:column;gap:2px}
+.facts b{font-family:var(--serif);font-weight:700;font-size:15px}
+.facts i{font-style:normal;font-size:11.5px;color:var(--muted);font-weight:600}
+
+/* red sunset — 3-villa selector */
+.villas{margin-bottom:30px}
+.vsel{display:flex;gap:6px;background:var(--sand);border:1px solid var(--line);border-radius:14px;padding:5px;margin-bottom:16px}
+.vtab{flex:1;border:none;background:transparent;font-family:var(--serif);font-weight:700;font-size:14px;color:var(--muted);padding:11px 6px;border-radius:10px;cursor:pointer;min-height:44px;transition:.2s var(--ease)}
+.vtab.active{background:var(--teal-d);color:#fff}
+.vcard{display:none}
+.vcard.active{display:block;animation:vfade .35s var(--ease)}
+@keyframes vfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.vtitle{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+.vtitle h4{font-family:var(--serif);font-size:20px;font-weight:700;line-height:1.1}
+.vtag{font-size:11px;font-weight:700;color:var(--sun);white-space:nowrap}
+.vdesc{font-size:14px;color:#55503f;line-height:1.45;margin-bottom:14px}
+.vspecs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px 8px;margin-bottom:16px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0}
+.vspecs > div{text-align:center}
+.vspecs b{display:block;font-family:var(--serif);font-size:16px;font-weight:700;line-height:1.1}
+.vspecs i{font-style:normal;display:block;font-size:10.5px;color:var(--muted);margin-top:5px;font-weight:600}
+.vprice{display:inline-flex;flex-direction:column;gap:1px;background:linear-gradient(120deg,var(--teal),var(--teal-d));color:#fff;border-inline-start:3px solid var(--gold);padding:11px 24px;border-radius:0 12px 12px 0}
+.vprice .amt{font-family:var(--serif);font-size:24px;font-weight:800;direction:ltr;line-height:1.05}
+.vprice .usd{font-size:13px;color:var(--gold);direction:ltr;font-weight:600}
+.vplan{margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
+.vplan-lbl{display:block;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--sun);margin-bottom:10px}
+.vplan img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:var(--sand);cursor:zoom-in;margin-bottom:8px}
+.vplan img:last-child{margin-bottom:0}
+.routes.one{grid-template-columns:1fr}
+
+/* red sunset — yield table */
+.ybox,.gcomp,.own{margin-bottom:30px}
+.ytable{width:100%;border-collapse:collapse;font-size:13px;direction:ltr}
+.ytable th,.ytable td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:center}
+.ytable th{font-family:var(--sans);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:700}
+.ytable td:first-child,.ytable th:first-child{text-align:left;font-weight:700;font-family:var(--serif)}
+.ytable tbody tr:last-child td{border-bottom:none}
+.ytable td{font-weight:600}
+.ynote{font-size:11.5px;color:var(--muted);margin-top:11px;line-height:1.55}
+
+/* red sunset — global comparison */
+.gcols{display:flex;gap:8px}
+.gcols > div{flex:1;background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:15px 8px;text-align:center}
+.gcols b{display:block;font-family:var(--serif);font-size:18px;font-weight:800;line-height:1.1;white-space:nowrap}
+.gcols b span[dir=ltr]{unicode-bidi:isolate}
+.gcols i{font-style:normal;display:block;font-size:11.5px;color:var(--muted);margin-top:5px;font-weight:600}
+.gcols > div:first-child{background:linear-gradient(150deg,var(--teal),var(--teal-d));border-color:transparent}
+.gcols > div:first-child b{color:#fff}.gcols > div:first-child i{color:var(--gold)}
+
+/* red sunset — ownership & payment */
+.milestones{display:flex;gap:6px;margin-bottom:16px}
+.milestones > div{flex:1;text-align:center;background:var(--sand);border:1px solid var(--line);border-radius:12px;padding:13px 4px}
+.milestones b{display:block;font-family:var(--serif);font-size:18px;font-weight:800;color:var(--teal);direction:ltr}
+.milestones i{font-style:normal;display:block;font-size:10px;color:var(--muted);margin-top:5px;font-weight:600;line-height:1.3}
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.routes > div{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:15px}
+.routes h6{font-family:var(--serif);font-size:14px;font-weight:700;margin-bottom:6px;color:var(--teal-d)}
+.routes p{font-size:12.5px;color:#55503f;line-height:1.45}
+
+/* compare */
+.compare{background:var(--dark);color:#fff;padding:66px 26px 72px}
+.compare .in{max-width:var(--maxw);margin:0 auto}
+.compare .cmp-eye{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:8px}
+.compare h2{font-family:var(--serif);font-size:36px;font-weight:700;text-align:center}
+.compare .sub{text-align:center;color:rgba(255,255,255,.6);font-size:14.5px;margin:8px 0 22px}
+.crow{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.crow .top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.crow .nm{font-family:var(--serif);font-size:21px;font-weight:700;line-height:1.15}
+.crow .nm small{display:block;font-family:var(--sans);font-size:12px;color:rgba(255,255,255,.55);font-weight:400;margin-top:4px}
+.crow .pr{text-align:start;white-space:nowrap}
+.crow .pr .b{display:block;font-family:var(--serif);font-weight:800;color:var(--gold);font-size:18px;direction:ltr}
+.crow .pr .u{display:block;font-size:11.5px;color:rgba(255,255,255,.6);direction:ltr;margin-top:1px}
+.crow ul{list-style:none;margin-top:12px;display:grid;gap:5px}
+.crow li{font-size:13.5px;color:rgba(255,255,255,.82);padding-inline-start:15px;position:relative;line-height:1.4}
+.crow li .ltr{direction:ltr;unicode-bidi:isolate}
+.crow li::before{content:'';position:absolute;inset-inline-start:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+
+/* closing */
+.closing{position:relative;color:#fff;text-align:center;padding:96px 26px calc(150px + env(safe-area-inset-bottom));overflow:hidden;background:var(--teal-d)}
+.closing-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.5}
+.closing::after{content:'';position:absolute;inset:0;background:rgba(10,28,26,.74);z-index:2}
+.closing .in{position:relative;z-index:4;max-width:var(--maxw);margin:0 auto}
+.closing .eye-closing{font-family:var(--sans);font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.closing h2{font-family:var(--serif);font-size:38px;font-weight:700;margin-bottom:14px}
+.closing p{color:rgba(255,255,255,.88);font-size:16px;max-width:36ch;margin-inline:auto}
+
+/* personal recommendation block */
+.recblock{background:var(--sand);padding:58px 26px}
+.recblock .in{max-width:var(--maxw);margin:0 auto;background:var(--paper);border:1px solid var(--line);border-inline-start:4px solid var(--gold);border-radius:0 18px 18px 0;padding:34px 30px;box-shadow:0 16px 44px rgba(16,26,24,.07)}
+.recblock .rb-eye{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sun);margin-bottom:11px}
+.recblock h3{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--ink);line-height:1.08}
+.recblock .rb-sig{font-family:var(--serif);font-size:21px;font-weight:700;color:var(--teal);margin-top:6px}
+.recblock p{font-family:var(--serif);font-size:18px;line-height:1.62;font-weight:500;color:#3f3a2d;margin-top:16px}
+.recblock h4{font-family:var(--sans);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sun);margin-top:28px;margin-bottom:-4px}
+.recblock .rb-final{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.recblock .rb-final h4{color:var(--teal);margin-top:0}
+.recblock .rb-final p{font-weight:600;color:var(--ink)}
+.recblock .ltr{direction:ltr;unicode-bidi:isolate}
+
+/* sticky whatsapp */
+.wa{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom));inset-inline:0;margin:0 auto;width:max-content;max-width:90vw;z-index:95;background:rgba(31,168,85,.96);color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:14px;padding:12px 22px;border-radius:999px;box-shadow:0 8px 22px rgba(0,0,0,.22);transition:.25s var(--ease)}
+.wa:hover{transform:translateY(-2px)}
+.wa svg{width:18px;height:18px;fill:#fff}
+
+/* lightbox — scroll-snap / momentum film-strip */
+.lb{position:fixed;inset:0;z-index:120;background:rgba(8,14,13,.97);display:none;opacity:0;transition:opacity .34s var(--ease);direction:ltr}
+.lb.open{display:block;opacity:1}
+.lb .stage{position:absolute;inset:0;overflow:hidden}
+.lb .embla__container{display:flex;height:100%;will-change:transform;backface-visibility:hidden}
+.lb-slide{position:relative;flex:0 0 100%;min-width:0;width:100vw;height:100svh;display:flex;align-items:center;justify-content:center;padding:max(16px,env(safe-area-inset-top)) 6vw calc(58px + env(safe-area-inset-bottom))}
+.lb img,.lb video{max-width:88vw;max-height:82svh;width:auto;height:auto;border-radius:10px;box-shadow:0 24px 70px rgba(0,0,0,.5);animation:pop .4s var(--ease)}
+@keyframes pop{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:none}}
+.lb .x{position:absolute;top:max(16px,env(safe-area-inset-top));inset-inline-end:18px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:4;backdrop-filter:blur(6px);transition:.2s var(--ease)}
+.lb .nav-btn{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:4;backdrop-filter:blur(6px);transition:.2s var(--ease)}
+.lb .x:hover,.lb .nav-btn:hover{background:rgba(255,255,255,.22)}
+.lb .prev{inset-inline-start:14px}.lb .next{inset-inline-end:14px}
+.lb .x svg{width:20px;height:20px}.lb .nav-btn svg{width:26px;height:26px}
+.lb .cap{position:absolute;bottom:max(18px,env(safe-area-inset-bottom));inset-inline:0;text-align:center;color:rgba(255,255,255,.82);font-size:13px;letter-spacing:.01em;z-index:4;padding:0 16px;pointer-events:none;text-shadow:0 1px 8px rgba(0,0,0,.6);direction:rtl}
+
+a:focus-visible,button:focus-visible,.mcell:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:8px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.lb .stage{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar" id="bar"></div>
+<div class="nav-scrim" id="navScrim"></div>
+<nav id="nav">
+  <div class="brand">Koh&nbsp;Phangan<b>.</b></div>
+  <div class="menu">
+    <a href="#srithanu">Srithanu</a><a href="#nai-wok">Nai&nbsp;Wok</a><a href="#villa-anne">Villa&nbsp;Anne</a><a href="#red-sunset">Red&nbsp;Sunset</a><a href="#koma">Koh&nbsp;Ma</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-bg" data-hero></div>
+  <div class="inner">
+    <div class="eye">Private Selection · Koh Phangan</div>
+    <h1><span class="nm-en">Five Opportunities</span><span class="hl-he">אי אחד — וחמש שבחרתי בעצמי</span></h1>
+    <p>שלוש וילות מוכנות להיכנס אליהן, ושני פרויקטים על קו החוף — כולם נבחרו בזכות שילוב של פרטיות, שקט ופוטנציאל השקעה ארוך טווח.</p>
+    <div class="cue"><span>↓</span> גללו</div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="intro reveal">
+  <div class="in">
+    <div class="eye-intro">Koh Phangan · Since 2022</div>
+    <p>בחרתי את החמישה האלה כי כל אחד עונה על משהו אחר. אין פה קטלוג — יש פה את מה שהייתי שולח לחבר טוב.</p>
+    <div class="sig">— Liran Miller</div>
+  </div>
+</section>
+
+<!-- ===== 01 SRITHANU ===== -->
+<section class="chapter" id="srithanu">
+  <div class="chapter-mark"><div class="pm-eye">Project 1</div><div class="pm-name">Srithanu Villa</div></div>
+  <div class="cover">
+    <div class="cover-bg" data-cover="srithanu"></div>
+    <div class="c">
+      <div class="num">01 — Move-in ready</div>
+      <div class="tags"><span class="tag">מפתח תוך 4 שבועות</span><span class="tag">קו שני · 4 דק׳ לים</span><span class="tag">שכונה שקטה</span></div>
+      <h2 class="en">Srithanu</h2>
+      <div class="loc">שכונה מיושבת של 14 וילות</div>
+      <div class="price-flag"><span class="amt">฿9M</span><span class="usd">($276K · כולל ריהוט)</span></div>
+    </div>
+  </div>
+  <div class="body">
+    <p class="lead reveal">וילה חדשה, בנויה ומוכנה למגורים או השכרה בסריטאנו, אחד האזורים המבוקשים והמבוססים ביותר בקופנגן. מחיר כניסה אטרקטיבי ביחס לאזור, ללא תקופת המתנה ועם ביקוש מוכח למגורים ולהשכרה.</p>
+    <div class="stats reveal">
+      <div><div class="v"><span dir="ltr">400</span> / <span dir="ltr">133</span></div><div class="k">מגרש / ממוזג מ״ר</div></div>
+      <div><div class="v"><span dir="ltr">3</span> · <span dir="ltr">4</span></div><div class="k">חדרי מאסטר · שירותים</div></div>
+      <div><div class="v">בריכה פרטית</div><div class="k">28 מ״ר</div></div>
+    </div>
+    <div class="actions reveal" data-actions="srithanu"></div>
+    <div class="locbanner reveal">
+      <div class="lb-eye">Location</div>
+      <div class="lb-tt">במרכז האי — ביקוש כל השנה</div>
+      <ul>
+        <li><span dir="ltr">3–4</span> דק׳ נסיעה מ-Zen Beach ומהשקיעות היפות באי</li>
+        <li><span dir="ltr">5–6</span> דקות מחוף הסיטארה ומהסיקרט ביץ</li>
+        <li>מרחק הליכה ממסעדות (Pumpui ועוד)</li>
+        <li>מרכז האי — גישה נוחה לכל כיוון</li>
+        <li>ביקוש כל השנה — מגורים ארוכי-טווח והשכרות קצרות</li>
+      </ul>
+    </div>
+    <div class="media" data-media="srithanu"></div>
+    <div class="feat reveal">
+      <div class="mhead"><span class="m-eye">Features</span><span class="m-tt">מה יש בוילה</span></div>
+      <ul class="featgrid">
+        <li>3 חדרי מאסטר נוחים ומרווחים</li>
+        <li>סלון נוח וביתי</li>
+        <li>מטבח מעוצב ופונקציונלי</li>
+        <li>מרפסת 38 מ״ר</li>
+        <li>בריכה פרטית 28 מ״ר</li>
+        <li>מזגנים בכל החדרים</li>
+        <li>חצר פרטית מעוצבת</li>
+        <li>חניה פרטית</li>
+        <li>12 דקות הליכה מהים</li>
+        <li>תשואה–מחיר מאוזנים מאוד</li>
+      </ul>
+    </div>
+    <div class="fin reveal">
+      <h4>הכנסה ותשואה</h4>
+      <div class="ln"><span>השכרה ארוכת-טווח</span><b><span class="ltr">90,000 ฿</span> / חודש <span class="ltr">($2,765)</span></b></div>
+      <div class="ln"><span>השכרה קצרה (לילה)</span><b><span class="ltr">7,000 ฿</span> <span class="ltr">($215)</span></b></div>
+      <div class="ln"><span>עליית ערך @5%/שנה</span><b>~10.9 מ׳ · 5 ש׳ → ~13.8 מ׳ · 10 ש׳</b></div>
+      <div class="disc">הערכות אילוסטרטיביות בלבד — לא הבטחה.</div>
+    </div>
+    <div class="dealstruct reveal">
+      <div class="mhead"><span class="m-eye">Deal Structure</span><span class="m-tt">מבנה העסקה</span></div>
+      <div class="ds-sub">אפשרויות בעלות גמישה</div>
+      <div class="ds-grid routes one">
+        <div class="ds-card"><h6>Leasehold גמיש</h6><p>חכירה ל-<span class="ltr">30</span> שנה על שמכם הפרטי, עם אופציית קנייה של הקרקע מעוגנת בחוזה — במידה ותרצו.</p></div>
+        <div class="ds-card"><h6>תשלום</h6><div class="ds-pay"><span>50% בחתימה</span><span>50% בהעברה</span></div></div>
+      </div>
+    </div>
+    <div class="pc reveal">
+      <div class="pro"><h5>יתרונות</h5><ul><li>כולל ריהוט עד המפתח</li><li>כניסה מיידית, אפס סיכון בנייה</li><li>שכונה שקטה ומיושבת = ביקוש כל השנה</li><li>ביקוש מוגבר בקרב קונים ישראלים</li></ul></div>
+      <div class="con"><h5>Good to know</h5><ul><li>צריך להוציא רישוי להשכרה קצרת-טווח — לא קיים כיום במתחם</li><li>יחידה אחרונה — אין בחירת מיקום</li></ul></div>
+    </div>
+    <div class="bestfor reveal"><div class="bf-eye">Best for</div><ul><li>מגורים</li><li>שכירות ארוכת-טווח</li><li>משקיעים סולידיים (סיכון נמוך)</li></ul></div>
+    <div class="bl reveal"><div class="lbl">The bottom line · Liran Miller</div><p>נכס מוכן ומרוהט בסריטאנו, באזור עם ביקוש יציב למגורים ולהשכרה, בלי להמתין לבנייה או למסירה.</p></div>
+  </div>
+</section>
+
+<!-- ===== 02 NAI WOK ===== -->
+<section class="chapter" id="nai-wok">
+  <div class="chapter-mark"><div class="pm-eye">Project 2</div><div class="pm-name">Nai Wok Villas</div></div>
+  <div class="cover">
+    <div class="cover-bg" data-cover="nai-wok"></div>
+    <div class="c">
+      <div class="num">02 — Move-in ready</div>
+      <div class="tags"><span class="tag">מוכן למגורים</span><span class="tag">2 דק׳ הליכה לים</span><span class="tag">הכי פרטי</span></div>
+      <h2 class="en">Nai Wok</h2>
+      <div class="loc">ווק טום · מתחם של 7 וילות · 4 דק׳ לרציף תונגסלה</div>
+      <div class="price-flag"><span class="amt">฿12M–12.5M</span><span class="usd">($369K–$384K)</span></div>
+    </div>
+  </div>
+  <div class="body">
+    <p class="lead reveal">וילות מוכנות עם נוף מוטרף לג׳ונגל, בסטנדרט בנייה גבוה, במיקום אסטרטגי — 3 דקות הליכה מהים, קרוב לפיר הראשי ולטונגסלה, ואטרקטיבי הן לתיירים והן למתגוררים שמחפשים איכות חיים במרכז האי.</p>
+    <div class="villas reveal">
+      <div class="mhead"><span class="m-eye">The 2 villas</span><span class="m-tt">שתי וילות לבחירה</span></div>
+      <div class="vsel" role="tablist" aria-label="בחירת וילה">
+        <button class="vtab active" data-villa="2" role="tab" aria-selected="true">Villa 2</button>
+        <button class="vtab" data-villa="3" role="tab" aria-selected="false">Villa 3</button>
+      </div>
+      <div class="vcard active" data-villa="2">
+        <div class="vtitle"><h4 class="en"><span dir="ltr">Villa 2</span> · האמצעית עם נוף לג׳ונגל</h4><span class="vtag">קומפקטית ומאוזנת</span></div>
+        <div class="vspecs">
+          <div><b dir="ltr">475 מ"ר</b><i>מגרש</i></div>
+          <div><b dir="ltr">140 מ"ר</b><i>בנוי ממוזג</i></div>
+          <div><b dir="ltr">40 מ"ר</b><i>דק עץ</i></div>
+          <div><b><span dir="ltr">3</span> · <span dir="ltr">2</span></b><i>חדרי שינה · מאסטר</i></div>
+          <div><b dir="ltr">3</b><i>חדרים רטובים</i></div>
+          <div><b dir="ltr">3.6 × 5.7</b><i>בריכה (מ׳)</i></div>
+        </div>
+        <div class="vprice"><span class="amt">฿12M</span><span class="usd">($369K)</span></div>
+        <div class="vplan" data-lbgroup="nw-v2"><span class="vplan-lbl">תוכנית וילה 2</span><img src="images/nai-wok/fp-v2.jpg" alt="תוכנית וילה 2" loading="lazy"></div>
+      </div>
+      <div class="vcard" data-villa="3">
+        <div class="vtitle"><h4 class="en"><span dir="ltr">Villa 3</span> · מגרש גדול, נוף לג׳ונגל וגינה</h4><span class="vtag">השטח והדק הגדולים</span></div>
+        <div class="vspecs">
+          <div><b dir="ltr">491 מ"ר</b><i>מגרש</i></div>
+          <div><b dir="ltr">140 מ"ר</b><i>בנוי ממוזג</i></div>
+          <div><b dir="ltr">70 מ"ר</b><i>דק עץ</i></div>
+          <div><b><span dir="ltr">3</span> · <span dir="ltr">2</span></b><i>חדרי שינה · מאסטר</i></div>
+          <div><b dir="ltr">3</b><i>חדרים רטובים</i></div>
+          <div><b dir="ltr">8 × 3</b><i>בריכה (מ׳)</i></div>
+        </div>
+        <div class="vprice"><span class="amt">฿12.5M</span><span class="usd">($384K)</span></div>
+        <div class="vplan" data-lbgroup="nw-v3"><span class="vplan-lbl">תוכנית וילה 3</span><img src="images/nai-wok/fp-v3.jpg" alt="תוכנית וילה 3" loading="lazy"></div>
+      </div>
+    </div>
+    <div class="furnbanner reveal">
+      <div class="fb-lead">הווילות נמסרות ללא ריהוט</div>
+      <p>חבילת הריהוט והסטיילינג עולה <span class="ltr">0.5M ฿</span> (<span class="ltr">~$15K</span>) וכוללת מכשירי חשמל, ריהוט, עיצוב וסטיילינג.</p>
+    </div>
+    <div class="actions reveal" data-actions="nai-wok"></div>
+    <div class="locbanner reveal">
+      <div class="lb-eye">Location</div>
+      <div class="lb-tt">דקות מהכל</div>
+      <ul>
+        <li>3 דק׳ הליכה לים</li>
+        <li>4 דק׳ מטונגסלה ומהפיר הראשי</li>
+        <li>קרבה ל-Srithanu ול-Hin Kong</li>
+        <li>מרחק הליכה מ-Blue Rama, Ocean Vibes ומוקדי וולנס</li>
+        <li>מיקום מרכזי באי — גישה נוחה לכל כיוון</li>
+      </ul>
+    </div>
+    <div class="media" data-media="nai-wok"></div>
+    <div class="fin reveal">
+      <h4>הכנסה ותשואה</h4>
+      <div class="ln"><span>השכרה ארוכת-טווח</span><b><span class="ltr">100,000 ฿</span> נטו</b></div>
+      <div class="ln"><span>השכרה קצרה (לילה)</span><b><span class="ltr">10,000 ฿</span> <span class="ltr">($305)</span></b></div>
+      <div class="full">רישוי מלונאי בתהליך · חברת ניהול מקומית</div>
+      <div class="ln"><span>עליית ערך @5%/שנה</span><b>~15.3 מ׳ · 5 ש׳ → ~19.5 מ׳ · 10 ש׳</b></div>
+      <div class="disc">רישוי מלונאי בתהליך. הערכות אילוסטרטיביות בלבד — לא הבטחה. בעלות ותשלום — ראו "מבנה העסקה".</div>
+    </div>
+    <div class="dealstruct reveal">
+      <div class="mhead"><span class="m-eye">Deal Structure</span><span class="m-tt">מבנה העסקה</span></div>
+      <div class="ds-sub">אפשרויות בעלות גמישה</div>
+      <div class="ds-grid routes one">
+        <div class="ds-card"><h6>Leasehold גמיש</h6><p>ליס גמיש — עם אופציה להארכה ו/או רכישת הקרקע ו/או מכירה.</p></div>
+        <div class="ds-card"><h6>תשלום</h6><div class="ds-pay"><span>50% בחתימה</span><span>50% בהעברה</span></div></div>
+      </div>
+    </div>
+    <div class="pc reveal">
+      <div class="pro"><h5>יתרונות</h5><ul><li>היזם עובד על הוצאת רישוי מלונאי למתחם</li><li>הפרטיות הכי גבוהה + 2 דק׳ הליכה לים</li><li>מנוע השכרה מוכח לאורך כל השנה</li><li>ניתן לרכוש 2 יחידות (וילה 2 + וילה 3) — לגור באחת ולהשכיר את השנייה</li></ul></div>
+      <div class="con"><h5>Good to know</h5><ul><li>המתחם פועל גם במודל של השכרות קצרות-טווח, כך שהשכנים עשויים להתחלף מעת לעת.</li><li>הבנייה בשטח הסמוך צפויה להסתיים בעוד כ-10 חודשים.</li><li>נמכר ללא ריהוט, מה שמאפשר התאמה אישית של העיצוב והתקציב.</li></ul></div>
+    </div>
+    <div class="bestfor reveal"><div class="bf-eye">Best for</div><ul><li>מגורים + השקעה (היברידי)</li><li>שכירות קצרת-טווח — Airbnb ו-Booking</li><li>שגר ושכח — חברת ניהול מקומית מטעם היזם שגם גר במתחם</li></ul></div>
+    <div class="bl reveal">
+      <div class="lbl">The bottom line · Liran Miller</div>
+      <p>אחת האפשרויות החזקות למי שמחפש נכס שגם נעים לגור בו וגם יודע לעבוד כהשקעה. שתי וילות מוכנות לבחירה — פרטיות גבוהה, ביקוש יציב להשכרה ומיקום אסטרטגי שמושך גם תושבים וגם תיירים בזכות הקרבה לטונגסלה ולפיר.</p>
+      <div class="guarantee">
+        <div class="gline primary"><span class="gtag">אופציה — התחייבות יזם לשכירות בשנה הראשונה</span><p>היזם מוכן לשכור מכם את הנכס לשנה הראשונה תמורת <span class="ltr">90,000 ฿</span> לחודש ולתפעל אותו בעצמו — תשואה מובטחת מהיום הראשון. <span class="ltr">90,000 × 12 = 1.08M ฿</span> (<span class="ltr">~$33K</span>): כמו הנחה על הנכס שמשולמת לכם לאורך השנה הראשונה, והוילה נמסרת לידיכם בעוד שנה.</p></div>
+        <div class="gline"><span class="gtag">עסקה אמיתית מהמתחם</span><p>אחת הווילות במתחם כבר מושכרת בפועל ב-<span class="ltr">100,000 ฿</span> לחודש נטו בחוזה ארוך-טווח.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 03 VILLA ANNE ===== -->
+<section class="chapter" id="villa-anne">
+  <div class="chapter-mark"><div class="pm-eye">Project 3</div><div class="pm-name">Villa Anne</div></div>
+  <div class="cover">
+    <div class="cover-bg" data-cover="villa-anne"></div>
+    <div class="c">
+      <div class="num">03 — Income · proven</div>
+      <div class="tags"><span class="tag">נוף ים ישיר</span><span class="tag">מרוהטת ומניבה</span><span class="tag">Airbnb Superhost 5⭐</span></div>
+      <h2 class="en">Villa Anne</h2>
+      <div class="loc">Haad Salad Bay · מעל מסעדת Tomorrow X</div>
+      <div class="price-flag"><span class="amt">฿17.85M</span><span class="usd">($549K)</span></div>
+    </div>
+  </div>
+  <div class="body">
+    <p class="lead reveal">וילת Sea View מרוהטת מעל מסעדת Tomorrow X בהאאד סאלאד — Airbnb פעיל עם דירוג Superhost 5⭐, שכבר מייצרת הכנסה מהיום הראשון. הוכחת הביצוע כאן היא לא הערכה — אלא נתוני אמת.</p>
+    <div class="stats reveal">
+      <div><div class="v">בריכת אינפיניטי</div><div class="k">פרטית · נוף ים</div></div>
+      <div><div class="v"><span dir="ltr">110</span> / <span dir="ltr">170</span></div><div class="k">ממוזג / כולל מ״ר</div></div>
+      <div><div class="v"><span dir="ltr">3</span> · <span dir="ltr">2</span></div><div class="k">חדרים · אמבטיות</div></div>
+    </div>
+    <div class="actions reveal" data-actions="villa-anne"></div>
+    <div class="locbanner reveal">
+      <div class="lb-eye">Location</div>
+      <div class="lb-tt">האאד סאלאד — הבוורלי הילס של קופנגן</div>
+      <p>מעל מסעדת Tomorrow X במפרץ האאד סאלאד, אחד האזורים היוקרתיים והמבוקשים ביותר בקופנגן, עם נוף ים ישיר וקהילה אינטרנשיונלית (גרמנים, אמריקאים, צרפתים).</p>
+    </div>
+    <div class="media" data-media="villa-anne"></div>
+    <div class="fin reveal">
+      <h4>הכנסה — נתוני אמת מאומתים</h4>
+      <div class="ln"><span>סך הכנסה מאומתת</span><b><span class="ltr">฿2.21M</span> · 9 חודשים</b></div>
+      <div class="ln"><span>לילות מאוכלסים</span><b><span class="ltr">248</span> לילות · <span class="ltr">25</span> הזמנות</b></div>
+      <div class="ln"><span>ADR ממוצע</span><b><span class="ltr">฿8,916</span> / לילה</b></div>
+      <div class="ln"><span>שיא עונה (דצמ׳–פבר׳)</span><b><span class="ltr">฿14K–24K</span> / לילה</b></div>
+      <div class="full">מגוון ערוצים: Airbnb · Booking · Agoda · Direct — לא תלוי בפלטפורמה אחת.</div>
+      <div class="disc">נתוני אמת מתוך יומן ההזמנות של הנכס (יולי 2025 – אפריל 2026). ביצועי עבר אינם ערובה לעתיד.</div>
+    </div>
+    <div class="dealstruct reveal">
+      <div class="mhead"><span class="m-eye">Deal Structure</span><span class="m-tt">מבנה העסקה</span></div>
+      <div class="ds-sub">אפשרויות בעלות גמישה</div>
+      <div class="ds-grid routes one">
+        <div class="ds-card"><h6>Leasehold</h6><p>חכירה ל-<span class="ltr">30</span> שנה במבנה המקובל בתאילנד. בתום התקופה ניתן יהיה לבחון הארכה בכפוף לחוק התאילנדי ולשיתוף פעולה של בעלת הקרקע.</p></div>
+      </div>
+    </div>
+    <div class="pc reveal">
+      <div class="pro"><h5>יתרונות</h5><ul><li>ממוקם בהאאד סאלאד — "הבוורלי הילס" של קופנגן</li><li>נוף ים ישיר</li><li>מרוהטת ומניבה מהיום הראשון — הוכחת ביצוע אמיתית</li><li>קהילה אינטרנשיונלית (גרמנים, אמריקאים, צרפתים)</li></ul></div>
+      <div class="con"><h5>Good to know</h5><ul><li>אין רישוי מלונאי — צריך להוציא</li><li>נכס המתאים בעיקרו ל-short-term, פחות למגורים ארוכי-טווח</li><li>החכירה היא ל-30 שנה. הארכה עתידית אינה מובטחת ותהיה כפופה לחוק התאילנדי ולתנאים שיהיו נהוגים במועד החידוש.</li></ul></div>
+    </div>
+    <div class="bestfor reveal"><div class="bf-eye">Best for</div><ul><li>Short-Term Rental</li><li>הכנסה מהיום הראשון</li><li>נוף ים</li><li>משקיעים שרוצים נכס מוכח שעובד</li></ul></div>
+    <div class="bl reveal"><div class="lbl">The bottom line · Liran Miller</div><p>הנכס היחיד בחבילה עם נתוני אמת מתועדים — וילת נוף-ים מרוהטת שכבר מייצרת הכנסה דרך Airbnb Superhost. אם אתם רוצים נכס שעובד מהרגע הראשון, בלי תקופת הרצה — זה הוא.</p></div>
+  </div>
+</section>
+
+<!-- ===== 04 RED SUNSET ===== -->
+<section class="chapter" id="red-sunset">
+  <div class="chapter-mark"><div class="pm-eye">Project 4</div><div class="pm-name">Red Sunset</div></div>
+  <div class="cover">
+    <div class="cover-bg" data-cover="red-sunset"></div>
+    <div class="presale-flag">Presale</div>
+    <div class="c">
+      <div class="num">03 — Presale · the jewel</div>
+      <div class="tags"><span class="tag">קו ראשון · חוף פרטי</span><span class="tag">רישיון מלון</span><span class="tag">3 וילות בלבד</span></div>
+      <h2 class="en">Red Sunset</h2>
+      <div class="loc">הין קונג · החוף המערבי · הפרויקט שלנו, ישיר מהיזם</div>
+      <div class="price-flag"><span class="amt">฿26M–33M</span><span class="usd">($800K–$1.02M)</span></div>
+    </div>
+  </div>
+  <div class="body">
+    <p class="lead reveal">לא ריזורט, לא מתחם — <b>שלוש וילות, חוף פרטי אחד</b>. בוטיק על קו המים בצד המערבי של קופנגן, אדריכלות מודרנית שקטה בתוך הטבע.</p>
+    <div class="facts reveal">
+      <span><b>Chanote</b><i>הטייטל הגבוה בתאילנד</i></span>
+      <span><b>דצמבר 2027</b><i>מסירה</i></span>
+      <span><b>רישיון מלון</b><i>השכרה חוקית</i></span>
+      <span><b>Turn-key</b><i>מסירה מרוהטת מלאה</i></span>
+    </div>
+    <div class="actions reveal" data-actions="red-sunset"></div>
+    <div class="locbanner reveal">
+      <div class="lb-eye">Location</div>
+      <div class="lb-tt">ראשון לים.</div>
+      <p>על קו החוף במפרץ הין קונג, במרחק הליכה מ-Zen Beach, מרכזי יוגה וולנס, מסעדות החוף המובילות, בתי קפה ומכוני כושר. אחד המיקומים הנוחים והמבוקשים ביותר בחוף המערבי של קופנגן.</p>
+      <p class="lb-close">אחת מרצועות החוף האחרונות שנותרו לפיתוח באזור.</p>
+    </div>
+    <div class="media" data-media="red-sunset"></div>
+
+    <div class="villas reveal">
+      <div class="mhead"><span class="m-eye">The 3 villas</span><span class="m-tt">שלוש וילות יוקרה · קו חוף אחד</span></div>
+      <div class="vsel" role="tablist" aria-label="בחירת וילה">
+        <button class="vtab active" data-villa="1" role="tab" aria-selected="true">Villa 1</button>
+        <button class="vtab" data-villa="2" role="tab" aria-selected="false">Villa 2</button>
+        <button class="vtab" data-villa="3" role="tab" aria-selected="false">Villa 3</button>
+      </div>
+      <div class="vcard active" data-villa="1">
+        <div class="vtitle"><h4 class="en">Villa 1 · Beachfront Signature</h4><span class="vtag">הנכס הפרמיום</span></div>
+        <p class="vdesc">קומה אחת. הסלון וחדרי המאסטר נפתחים ישירות אל מרפסת הבריכה מול הים — הבריכה הגדולה במתחם.</p>
+        <div class="vspecs">
+          <div><b dir="ltr">4</b><i>חדרי מאסטר</i></div>
+          <div><b dir="ltr">321 מ"ר</b><i>שטח כולל</i></div>
+          <div><b dir="ltr">150 מ"ר</b><i>שטח פנים</i></div>
+          <div><b dir="ltr">12 מ׳</b><i>מהים</i></div>
+          <div><b dir="ltr">31 מ"ר</b><i>בריכה</i></div>
+          <div><b dir="ltr">9.6–14.4%</b><i>ROI נטו</i></div>
+        </div>
+        <div class="vprice"><span class="amt">฿33M</span><span class="usd">($1.02M)</span></div>
+        <div class="vplan" data-lbgroup="rs-v1"><span class="vplan-lbl">תוכנית הוילה</span><img src="images/red-sunset/fp1.jpg" alt="תוכנית Villa 1" loading="lazy"></div>
+      </div>
+      <div class="vcard" data-villa="2">
+        <div class="vtitle"><h4 class="en">Villa 2 · Elevated Sea View</h4><span class="vtag">הכניסה הנגישה</span></div>
+        <p class="vdesc">קומה מוגבהת. שלושה חדרי מאסטר עם נוף ים פתוח ואוורור מצולב מחללי המגורים.</p>
+        <div class="vspecs">
+          <div><b dir="ltr">3</b><i>חדרי מאסטר</i></div>
+          <div><b dir="ltr">212 מ"ר</b><i>שטח כולל</i></div>
+          <div><b dir="ltr">140 מ"ר</b><i>שטח פנים</i></div>
+          <div><b dir="ltr">50 מ׳</b><i>מהים</i></div>
+          <div><b dir="ltr">22 מ"ר</b><i>בריכה</i></div>
+          <div><b dir="ltr">8.6–12.9%</b><i>ROI נטו</i></div>
+        </div>
+        <div class="vprice"><span class="amt">฿26M</span><span class="usd">($800K)</span></div>
+        <div class="vplan" data-lbgroup="rs-v2"><span class="vplan-lbl">תוכנית הוילה</span><img src="images/red-sunset/fp2.jpg" alt="תוכנית Villa 2" loading="lazy"></div>
+      </div>
+      <div class="vcard" data-villa="3">
+        <div class="vtitle"><h4 class="en">Villa 3 · Grand Family Duplex</h4><span class="vtag">הכי הרבה שטח לכסף</span></div>
+        <p class="vdesc">דופלקס בשתי קומות. קומת קרקע — מגורים ומאסטר; קומה עליונה — 3 מאסטר נוספים ומרפסת נוף לים.</p>
+        <div class="vspecs">
+          <div><b dir="ltr">4</b><i>חדרי מאסטר</i></div>
+          <div><b dir="ltr">313 מ"ר</b><i>שטח כולל</i></div>
+          <div><b dir="ltr">185 מ"ר</b><i>שטח פנים</i></div>
+          <div><b dir="ltr">80 מ׳</b><i>מהים</i></div>
+          <div><b dir="ltr">22 מ"ר</b><i>בריכה</i></div>
+          <div><b dir="ltr">9.0–13.5%</b><i>ROI נטו</i></div>
+        </div>
+        <div class="vprice"><span class="amt">฿29M</span><span class="usd">($895K)</span></div>
+        <div class="vplan" data-lbgroup="rs-v3"><span class="vplan-lbl">תוכנית הוילה — 2 קומות</span><img src="images/red-sunset/fp3.jpg" alt="Villa 3 — קומת קרקע" loading="lazy"><img src="images/red-sunset/fp4.jpg" alt="Villa 3 — קומה עליונה" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="ybox reveal">
+      <div class="mhead"><span class="m-eye">Net yield</span><span class="m-tt">תשואה נטו לפי תפוסה</span></div>
+      <table class="ytable">
+        <thead><tr><th>Villa</th><th>ADR</th><th>60%</th><th>75%</th><th>90%</th></tr></thead>
+        <tbody>
+          <tr><td>Villa 1</td><td>฿17K</td><td>9.6%</td><td>12.0%</td><td>14.4%</td></tr>
+          <tr><td>Villa 2</td><td>฿12K</td><td>8.6%</td><td>10.7%</td><td>12.9%</td></tr>
+          <tr><td>Villa 3</td><td>฿14K</td><td>9.0%</td><td>~11%</td><td>13.5%</td></tr>
+        </tbody>
+      </table>
+      <p class="ynote">אחרי 15% דמי ניהול · בקופנגן רק 2 חודשי שפל בשנה (יוני + נובמבר), והמיקום על החוף ממזער את הירידה העונתית. טווחים שמרניים — הערכה, לא הבטחה.</p>
+    </div>
+
+    <div class="gcomp reveal">
+      <div class="mhead"><span class="m-eye">Same asset class</span><span class="m-tt">וילת חוף — אותה קטגוריית נכס. סדר גודל אחר של מחיר.</span></div>
+      <p class="gsub">כמה עולה Beachfront בעולם?</p>
+      <table class="gtable">
+        <thead><tr><th>מיקום</th><th>מחיר פתיחה</th></tr></thead>
+        <tbody>
+          <tr><td>Miami</td><td><span class="ltr">$8M+</span></td></tr>
+          <tr><td>Ibiza</td><td><span class="ltr">$5M+</span></td></tr>
+          <tr class="hi"><td>Koh Phangan</td><td><span class="ltr">$1M+</span></td></tr>
+        </tbody>
+      </table>
+      <p class="ynote">וילת חוף פרטית בקופנגן — במחיר כניסה יוצא דופן ביחס לנכסי חוף מקבילים בעולם.</p>
+    </div>
+
+    <div class="own reveal">
+      <div class="mhead"><span class="m-eye">Deal Structure</span><span class="m-tt">מבנה העסקה</span></div>
+      <div class="milestones">
+        <div><b dir="ltr">30%</b><i>חתימה</i></div>
+        <div><b dir="ltr">20%</b><i>יסודות</i></div>
+        <div><b dir="ltr">30%</b><i>גג</i></div>
+        <div><b dir="ltr">20%</b><i>מסירה · דצמ׳ 2027</i></div>
+      </div>
+      <div class="routes one">
+        <div><h6>חכירה מגובה-יזם</h6><p>חכירה ישירה מהיזם, תחת החברה המחזיקה בקרקע ועם בטוחות משפטיות נוספות. לוח תשלומים צמוד-בנייה (ראו אבני-הדרך למעלה). חידוש ל-<span class="ltr">30</span> שנה נוספות בכפוף לחוק התאילנדי — עם חוזה מגבה מול היזם.</p></div>
+        <div><h6>אפשרות השקעה נוספת</h6><p>לצד רכישת וילה בודדת, אנו פתוחים לבחון הכנסת שותף אסטרטגי ברמת הפרויקט כולו. המודל כולל השתתפות במימון הקרקע והבנייה, בתמורה לאחזקה משמעותית במתחם ולהשתתפות מלאה בעליית הערך העתידית.</p></div>
+      </div>
+    </div>
+
+    <div class="pc reveal">
+      <div class="pro"><h5>יתרונות</h5><ul><li>חוף פרטי משותף לשלוש הווילות</li><li>נוף לים מכל וילה</li><li>רישיון מלון — השכרה קצרה חוקית</li><li>צפי לעליית ערך עקב הקרבה לים באזור ביקוש סופר אטרקטיבי</li></ul></div>
+      <div class="con"><h5>Good to know</h5><ul><li>מסירה צפויה בדצמבר 2027 — ההכנסות מתחילות לאחר המסירה.</li><li>קו החוף מושפע ממחזורי הגאות והשפל.</li><li>התוכנית עדיין לא אושרה סופית — כרגע באישור אדריכל מקומי, טרם הגשת הפרמיט.</li></ul></div>
+    </div>
+    <div class="bestfor reveal"><div class="bf-eye">Best for</div><ul><li>Short-Term Rental</li><li>משקיעים לטווח ארוך</li><li>מחפשי עליית ערך משמעותית</li><li>רוכשי נכסי Beachfront נדירים</li></ul></div>
+    <div class="bl reveal"><div class="lbl">The bottom line · Liran Miller</div><p>שלוש וילות יוקרה על קו החוף, בריכות פרטיות ונוף פתוח לים. הפרויקט ממוקם על אחת מרצועות החוף האחרונות שנותרו לפיתוח באזור סריטאנו–הין קונג, עם שלוש וילות בלבד, היצע מוגבל ופוטנציאל השבחה שקשה למצוא כיום באי.</p></div>
+  </div>
+</section>
+
+<!-- ===== 04 KOH MA ===== -->
+<section class="chapter" id="koma">
+  <div class="chapter-mark"><div class="pm-eye">Project 5</div><div class="pm-name">Koh Ma</div></div>
+  <div class="cover">
+    <div class="cover-bg" data-cover="koma"></div>
+    <div class="presale-flag">Presale</div>
+    <div class="c">
+      <div class="num">04 — Presale · early access</div>
+      <div class="tags"><span class="tag">קו ראשון · 12 מ׳ מהמים</span><span class="tag">ביץ׳ קלאב</span><span class="tag">אזור ירוק · שקט</span></div>
+      <h2 class="en">Koh Ma</h2>
+      <div class="sub">Sana Beach Resort</div>
+      <div class="loc">צפון-מערב קופנגן</div>
+      <div class="price-flag"><span class="amt">฿18M</span><span class="usd">(~$553K)</span><span class="note">ליחידה</span></div>
+    </div>
+  </div>
+  <div class="body">
+    <p class="lead reveal">קו ראשון אמיתי — 12 מטר מהמים, על חוף שהופך לריזורט עם ביץ׳ קלאב. גישה מוקדמת לפני שזה יוצא לשוק.</p>
+    <div class="stats reveal">
+      <div><div class="v"><span dir="ltr">100–120</span></div><div class="k">מ״ר · 2 קומות</div></div>
+      <div><div class="v">דו-סוויטה</div><div class="k">לגור באחת · להשכיר את השנייה</div></div>
+      <div><div class="v">ליסהולד</div><div class="k">מבנה חברה / מניות</div></div>
+    </div>
+    <div class="actions reveal" data-actions="koma"></div>
+    <div class="media" data-media="koma"></div>
+    <div class="fin reveal">
+      <h4>למה זה מעניין</h4>
+      <div class="ln"><span>קו ראשון</span><b>12 מ׳ מהמים · חוף</b></div>
+      <div class="ln"><span>ניהול</span><b>ביץ׳ קלאב + מתחם הסעדה ברמה גבוהה</b></div>
+      <div class="ln"><span>אקזיט</span><b>אופציה למכירת המתחם ליזם מלונאי גדול</b></div>
+      <div class="ln"><span>הוכחת ביצוע</span><b>ריזורט קיים באי — Haad Salad</b></div>
+      <div class="disc">אזור ירוק = בנייה מוגבלת (עד 150 מ״ר, גובה עד 6 מ׳, כיסוי עד 50%) — נמוך-צפיפות ושקט. הווידאו מציג את הריזורט הקיים של היזם בהאאד סאלאד (הוכחת יכולת), לא את מגרש קו-מה. מחיר ומפרט סופי מתגבשים.</div>
+    </div>
+    <div class="dealstruct reveal">
+      <div class="mhead"><span class="m-eye">Deal Structure</span><span class="m-tt">מבנה העסקה</span></div>
+      <div class="ds-sub">שתי דרכי כניסה</div>
+      <div class="ds-grid">
+        <div class="ds-card"><h6>חכירה ל-<span class="ltr">30</span> שנה</h6><p>מבנה חכירה ארוך-טווח.</p></div>
+        <div class="ds-card"><h6>השתתפות הונית</h6><p>השתתפות במניות החברה (Equity Participation via Company Shares).</p></div>
+      </div>
+      <p class="ynote">המבנה הסופי נקבע לפי העדפת המשקיע.</p>
+    </div>
+    <div class="pc reveal">
+      <div class="pro"><h5>יתרונות</h5><ul><li>קו ראשון על חוף ירוק ושקט — נדיר</li><li>ינוהל כביץ׳ קלאב + הסעדה ברמה גבוהה</li><li>יזם עם ניסיון בניהול ריזורטים ברחבי העולם</li><li>אופציית אקזיט — מכירה ליזם מלונאי גדול</li></ul></div>
+      <div class="con"><h5>Good to know</h5><ul><li>לא מתאים למגורים — מבנה דו-קומתי המחולק לשתי יחידות, מתאים יותר לשהייה קצרת-טווח.</li><li>פריסייל — 18–24 חודש, השלב הכי מוקדם</li><li>מפרט ומחיר סופי מתגבשים</li></ul></div>
+    </div>
+    <div class="bestfor reveal"><div class="bf-eye">Best for</div><ul><li>כניסה מוקדמת (Early access)</li><li>קוני קו-ראשון לים</li><li>אורח חיים של ביץ׳ קלאב</li></ul></div>
+    <div class="bl reveal"><div class="lbl">The bottom line · Liran Miller</div><p>אם רוצים להיכנס ראשונים, קו ראשון לים, לפני שהשוק מגלה — זו הזדמנות הגישה-המוקדמת. הפוטנציאל הכי גבוה, השלב הכי מוקדם.</p></div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="compare">
+  <div class="in">
+    <div class="cmp-eye">The opportunity map</div>
+    <h2>מפת ההזדמנויות</h2>
+    <div class="sub">מהמוכן והנגיש → אל החלום הראשון-לים</div>
+
+    <div class="crow">
+      <div class="top">
+        <div class="nm en">Srithanu<small>מוכן · קו שני · שקט · 3 חדרים</small></div>
+        <div class="pr"><span class="b">฿9M</span><span class="u">(~$276K · כולל ריהוט)</span></div>
+      </div>
+      <ul>
+        <li>3 חדרי שינה מאסטר</li>
+        <li>LTR: <span class="ltr">90,000 ฿</span>/חודש <span class="ltr">($2,765)</span></li>
+        <li>STR: <span class="ltr">7,000 ฿</span>/לילה <span class="ltr">($215)</span></li>
+        <li>כולל ריהוט — turn-key</li>
+      </ul>
+    </div>
+
+    <div class="crow">
+      <div class="top">
+        <div class="nm en">Nai Wok<small>מוכן · הכי פרטי · תשואה 8–12%</small></div>
+        <div class="pr"><span class="b">฿12M–12.5M</span><span class="u">($369K–$384K)</span></div>
+      </div>
+      <ul>
+        <li>LTR: <span class="ltr">100,000 ฿</span> נטו</li>
+        <li>STR: <span class="ltr">10,000 ฿</span>/לילה <span class="ltr">($305)</span></li>
+        <li>רישוי מלונאי בתהליך</li>
+        <li>חברת ניהול מקומית</li>
+      </ul>
+    </div>
+
+    <div class="crow">
+      <div class="top">
+        <div class="nm en">Villa Anne<small>מניבה · נוף ים · Airbnb Superhost</small></div>
+        <div class="pr"><span class="b">฿17.85M</span><span class="u">($549K)</span></div>
+      </div>
+      <ul>
+        <li>גישה לנוף ים</li>
+        <li><span class="ltr">฿2.21M</span> הכנסה מאומתת (9 ח׳)</li>
+        <li>ADR <span class="ltr">฿8,916</span></li>
+        <li>Airbnb <span class="ltr">5⭐</span></li>
+      </ul>
+    </div>
+
+    <div class="crow">
+      <div class="top">
+        <div class="nm en">Red Sunset<small>פריסייל · חוף פרטי · רישיון מלון</small></div>
+        <div class="pr"><span class="b">฿26M–33M</span><span class="u">($800K–$1.02M)</span></div>
+      </div>
+      <ul>
+        <li>גישה לחוף פרטי</li>
+        <li>רישוי מלונאי</li>
+        <li>נוף לים</li>
+      </ul>
+    </div>
+
+    <div class="crow">
+      <div class="top">
+        <div class="nm en">Koh Ma - Sana Beach Resort<small>פריסייל · קו ראשון · ביץ׳ קלאב</small></div>
+        <div class="pr"><span class="b">฿18M</span><span class="u">(~$553K · ליחידה)</span></div>
+      </div>
+      <ul>
+        <li>ינוהל כביץ׳ קלאב</li>
+        <li>יזם עם ניסיון ריזורטים גלובלי</li>
+        <li>מתחם הסעדה ברמה גבוהה</li>
+        <li>אופציית אקזיט — מכירה ליזם מלונאי גדול</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL NOTE -->
+<section class="recblock">
+  <div class="in">
+    <div class="rb-eye">A Personal Note</div>
+    <h3>המבט שלי על האי</h3>
+    <p>חמש ההזדמנויות שכאן הן לא הקטלוג שלי. הן החמש שאני באמת הייתי בוחר בעצמי היום — לפי שילוב של תקציב, מצב שוק וטיימינג.</p>
+    <p>כל אחת מהן בנויה אחרת: יש כאן נכס מוכן שאפשר להיכנס אליו כבר מחר, יש השקעה מניבה שכבר עובדת, ויש פריסייל שמי שנכנס היום — נכנס במחיר שלא יחזור.</p>
+    <p>אני לא מאמין בלחץ ולא בקטלוג ארוך. אני מאמין שכשמראים לך בדיוק חמישה דברים, כל אחד מהם נבחר מסיבה — קל יותר להבין מה מתאים לך באמת.</p>
+    <div class="rb-final">
+      <p><strong>אם תרצה לדבר על איזו מהן מתאימה לך — אני כאן.</strong></p>
+    </div>
+    <div class="rb-sig">— לירן</div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+  <div class="closing-bg" data-closing></div>
+  <div class="in">
+    <h2>זמין לשאלות</h2>
+  </div>
+</section>
+
+<a class="wa" href="https://wa.me/972507308658?text=%D7%94%D7%99%D7%99%20%D7%9C%D7%99%D7%A8%D7%9F%20%F0%9F%99%82">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.01c-.24.68-1.4 1.3-1.94 1.38-.5.07-1.12.1-1.81-.11-.42-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.55-1.17-2.96s.74-2.1 1-2.39c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.72 1.18 1.54 1.91 1.06.95 1.95 1.24 2.23 1.38.28.14.44.12.6-.07.17-.19.69-.81.88-1.09.19-.28.37-.23.62-.14.25.09 1.61.76 1.89.9.28.14.46.21.53.33.07.12.07.68-.17 1.36z"/></svg>
+  וואטסאפ · לירן
+</a>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="גלריית תמונות">
+  <div class="stage" id="lbStage"></div>
+  <button class="x" id="lbX" aria-label="סגירה">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <button class="nav-btn prev" id="lbPrev" aria-label="הקודם">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="nav-btn next" id="lbNext" aria-label="הבא">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+  <div class="cap" id="lbCap"></div>
+</div>
+
+<script src="assets/js/embla-carousel.umd.js"></script>
+<script src="assets/data/media.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
