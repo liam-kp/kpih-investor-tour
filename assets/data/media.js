@@ -138,6 +138,24 @@ window.MEDIA = {
       brochure: { url: "images/red-sunset/brochure.pdf", label: "ברושור (PDF)" }
     },
     {
+      slug: "red-sunset-land",
+      cover: { type: "image", src: "images/red-sunset-land/cover.jpg", alt: "Red Sunset — חלקת חוף קו ראשון, גבולות המגרש מסומנים ממעוף הרחפן" },
+      photos: [
+        { type: "image", src: "images/red-sunset-land/aerial.jpg", tag: "aerial",   alt: "תצלום רחפן אמיתי — חלקת החוף בקו ראשון", feature: true },
+        { type: "image", src: "images/red-sunset-land/plot.jpg",   tag: "exterior", alt: "מבט מהמגרש — אדמה פנויה ונוף פתוח לים ולאיים" },
+        { type: "image", src: "images/red-sunset-land/beach.jpg",  tag: "exterior", alt: "החוף מול המגרש — חוף חולי, סלעים ומים צלולים" }
+      ],
+      videos: [
+        { type: "video", src: "videos/red-sunset-land/1.mp4", poster: "images/red-sunset-land/1-poster.jpg", tag: "exterior", desc: "מבט מהמגרש — אדמה פנויה ונוף פתוח לים ולאיים" },
+        { type: "video", src: "videos/red-sunset-land/2.mp4", poster: "images/red-sunset-land/2-poster.jpg", tag: "exterior", desc: "החוף מול המגרש — חוף חולי, סלעים ומים צלולים" }
+      ],
+      floorplan: [
+        { type: "image", src: "images/red-sunset-land/masterplan.jpg", alt: "תוכנית אב — שלוש וילות + reception על המגרש" },
+        { type: "image", src: "images/red-sunset-land/geometry.jpg",   alt: "גיאומטריית המגרש — מדידה טופוגרפית · 14.98 מ׳ חזית · 1,308 מ\"ר" }
+      ],
+      location: { url: "https://maps.app.goo.gl/wukt9KP7e4JA348t8", label: "מיקום מדויק במפה" }
+    },
+    {
       slug: "koma",
       cover: { type: "image", src: "images/koma/cover.jpg", alt: "Koh Ma — מצוק, חוף ודקלים ממעוף הרחפן" },
       photos: [
